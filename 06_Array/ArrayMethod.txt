@@ -1,0 +1,84 @@
+avaScript Array Methods
+
+👉 JavaScript provides powerful built-in array methods that eliminate the need for traditional loops, making code more readable and maintainable.
+
+👉 𝐂𝐨𝐫𝐞 𝐀𝐫𝐫𝐚𝐲 𝐌𝐞𝐭𝐡𝐨𝐝𝐬 𝐄𝐱𝐩𝐥𝐚𝐢𝐧𝐞𝐝
+
+1. 𝐦𝐚𝐩()
+→ Creates a new array by transforming each element
+→ Returns: New array of same length
+→ Example:
+
+const numbers = [1, 2, 3];
+
+const doubled = numbers. map(num => num * 2); // [2, 4, 6]
+
+2. 𝐟𝐢𝐥𝐭𝐞𝐫()
+→ Creates new array with elements that pass a test
+→ Returns: New array (possibly shorter)
+→ Example:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers.filter(num => num % 2 === 0); // [2, 4]
+
+3. 𝐟𝐢𝐧𝐝()
+→ Returns first element that matches condition
+→ Returns: Single element or undefined
+→ Example:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const firstEven = numbers.find(num => num % 2 === 0); // 2
+
+4. 𝐟𝐢𝐧𝐝𝐈𝐧𝐝𝐞𝐱()
+→ Returns index of first matching element
+→ Returns: Number (index) or -1 if not found
+→ Example:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const firstEvenIndex = numbers.findIndex(num => num % 2 === 0); // 1
+
+5. 𝐟𝐢𝐥𝐥()
+→ Fills array elements with static value
+→ Returns: Modified original array
+→ Example:
+
+const array = [1, 2, 3, 4];
+
+array.fill(0); // [0, 0, 0, 0]
+
+6. 𝐬𝐨𝐦𝐞()
+→ Tests if ANY element passes condition
+→ Returns: Boolean
+→ Example:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const hasEven = numbers.some(num => num % 2 === 0); // true
+
+7. 𝐞𝐯𝐞𝐫𝐲()
+→ Tests if ALL elements pass condition
+→ Returns: Boolean
+→ Example:
+
+const numbers = [2, 4, 6, 8];
+
+const allEven = numbers.every(num => num % 2 === 0); // true
+
+
+👉 𝐊𝐞𝐲 𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬
+→ More readable code
+→ Reduced chance of errors
+→ Chainable operations
+→ Immutable operations (for methods that return new arrays)
+→ Built-in iteration handling
+
+
+👉𝐁𝐞𝐬𝐭 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐞𝐬
+→ Use map() for transformations
+→ Use filter() for subset creation
+→ Use find() for single element search
+→ Prefer these methods over traditional for loops when possible
+→ Chain methods for complex operations
