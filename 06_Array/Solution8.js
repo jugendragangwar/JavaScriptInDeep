@@ -10,8 +10,8 @@ function deleteItemInArray(userArray, position) {
   return result;
 }
 
-let arr = [12, 33, 54, 67, 87, 9, 32, 43, 45, 32];
-let userPosition = 5;
+
+
 
 let updatedArray = deleteItemInArray(arr, userPosition);
 console.log(updatedArray);
